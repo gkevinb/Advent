@@ -2,15 +2,29 @@ $date_color: #912207;
 $bg_color: #1b722e;
 
 body{
-    background-color: $bg_color;
+
 }
 
-.container {
+.container{
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    background-image: url("../img/background.jpg");
+}
+
+.sidebar{
+    background-color: $bg_color;
+    opacity: 0.4;
+}
+
+.calendar {
     height: 100%;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 120px);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
         "d1  d2  d3  d4  d5"
         "d6  d7  d8  d9  d10"
@@ -22,8 +36,9 @@ body{
 
 .date {
     background-color: $date_color;
+    opacity: 0.8;
     text-align: center;
-    font-size: 50px;
+    font-size: 80px;
     color: white;
     font-family: 'Mountains of Christmas', cursive;
   /* Connects this div with template layout  */
