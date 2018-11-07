@@ -1,0 +1,94 @@
+body {
+  background-color: #1b722e; }
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 120px);
+  grid-template-areas: "d1  d2  d3  d4  d5" "d6  d7  d8  d9  d10" "d11 d12 d13 d14 d15" "d16 d17 d18 d19 d20" "d21 d22 d23 d24 . ";
+  /* Create mini representation of layout with letters*/ }
+
+.date {
+  background-color: #912207;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  font-family: 'Mountains of Christmas', cursive;
+  /* Connects this div with template layout  */ }
+
+#dec1 {
+  grid-area: d1; }
+
+#dec2 {
+  grid-area: d2; }
+
+#dec3 {
+  grid-area: d3; }
+
+#dec4 {
+  grid-area: d4; }
+
+#dec5 {
+  grid-area: d5; }
+
+#dec6 {
+  grid-area: d6; }
+
+#dec7 {
+  grid-area: d7; }
+
+#dec8 {
+  grid-area: d8; }
+
+#dec9 {
+  grid-area: d9; }
+
+#dec10 {
+  grid-area: d10; }
+
+#dec11 {
+  grid-area: d11; }
+
+#dec12 {
+  grid-area: d12; }
+
+#dec13 {
+  grid-area: d13; }
+
+#dec14 {
+  grid-area: d14; }
+
+#dec15 {
+  grid-area: d15; }
+
+#dec16 {
+  grid-area: d16; }
+
+#dec17 {
+  grid-area: d17; }
+
+#dec18 {
+  grid-area: d18; }
+
+#dec19 {
+  grid-area: d19; }
+
+#dec20 {
+  grid-area: d20; }
+
+#dec21 {
+  grid-area: d21; }
+
+#dec22 {
+  grid-area: d22; }
+
+#dec23 {
+  grid-area: d23; }
+
+#dec24 {
+  grid-area: d24; }
+
+#dec25 {
+  grid-area: d25; }
