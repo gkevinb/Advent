@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <div class="maintitle">
-            <h1>Our Advent</h1>
+            <h1>Our Christmas Advent Calendar</h1>
 
         </div>
 
@@ -23,34 +23,42 @@
 
         <!-- The Modal -->
         <div id="myModal" class="modal">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div id="model-content">
-                
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2 id="modal-title">December 1</h2>
+                </div>
+                <div class="modal-body">
+                    <img id="modal-img" />
+                    <p id="modal-text">Some text in the Modal Body</p>
+                </div>
+                <div class="modal-footer">
+                </div>
             </div>
-            <!-- <img class="modal-content" id="img01"> -->
-            <div id="caption"></div>
+
         </div>
 
+
         <div class="calendar">
-            <div class="date">
-                <div id="dec1--date" onclick="dateClicked(1)">
+            <div class="date" onclick="dateClicked(1)">
+                <div id="dec1--date">
                     <span>1</span>
                 </div>
                 <div id="dec1--content">
-                    <span id="dude">Helllos</span>
                 </div>
 
             </div>
-            <div class="date">
+            <div class="date" onclick="dateClicked(2)">
                 <div id="dec2--date">
                     <span>2</span>
                 </div>
                 <div id="dec2--content">
-                    <span>Bye</span>
                 </div>
 
             </div>
-            <div class="date">
+            <div class="date" onclick="dateClicked(3)">
                 <div id="dec3--date">
                     <span>3</span>
                 </div>
@@ -58,7 +66,7 @@
                 </div>
 
             </div>
-            <div class="date">
+            <div class="date" onclick="dateClicked(4)">
                 <div id="dec4--date">
                     <span>4</span>
                 </div>
@@ -66,7 +74,7 @@
                 </div>
 
             </div>
-            <div class="date">
+            <div class="date" onclick="dateClicked(5)">
                 <div id="dec5--date">
                     <span>5</span>
                 </div>

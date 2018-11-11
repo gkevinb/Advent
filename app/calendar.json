@@ -2,7 +2,8 @@
     "december": [
         {
             "day" : 1,
-            "opened" : false
+            "opened" : false,
+            "text" : "The memories of our time at the deer park."
         },
         {
             "day" : 2,

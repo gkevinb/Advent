@@ -1,4 +1,21 @@
 var calendarDB;
+var modal;
+
+
+
+// When the user clicks on <span> (x), close the modal
+function closeModal() {
+    var modal = document.getElementById('myModal');
+    modal.style.display = "none";
+}
+
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
 
 
 /*
@@ -12,6 +29,12 @@ function constructDecDateString(date) {
 */
 function constructDecContentString(date) {
     return "dec" + String(date) + "--content";
+}
+/*
+18 -> img/dec18.jpg
+*/
+function constructImgSrc(date) {
+    return "img/dec" + String(date) + ".jpeg";
 }
 
 /*
@@ -44,21 +67,32 @@ function dateClicked(day) {
     for (var i = 0; i < calendarDB.december.length; i++) {
         if (calendarDB.december[i].day == day) {
             calendarDB.december[i].opened = true;
+            var text = calendarDB.december[i].text;
         }
     }
     localStorage.setItem('advent_calendar', JSON.stringify(calendarDB));
 
-    // Get the modal
     var modal = document.getElementById('myModal');
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    //var img = document.getElementById('myImg');
-    //var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("dude");
-    var modalCaption = document.getElementById("caption");
+    console.log(modal);
     modal.style.display = "block";
-    //modalImg.src = img.src;
-    modalCaption.innerHTML = captionText.innerHTML;
+
+    document.getElementById('modal-title').innerHTML = "December " + String(day);
+    document.getElementById('modal-img').src = constructImgSrc(day);
+    document.getElementById('modal-text').innerHTML = text;
+
+
+
+    // // Get the modal
+    // var modal = document.getElementById('myModal');
+    //
+    // // Get the image and insert it inside the modal - use its "alt" text as a caption
+    // //var img = document.getElementById('myImg');
+    // //var modalImg = document.getElementById("img01");
+    // var captionText = document.getElementById("dude");
+    // var modalCaption = document.getElementById("caption");
+    // modal.style.display = "block";
+    // //modalImg.src = img.src;
+    // modalCaption.innerHTML = captionText.innerHTML;
 
 }
 
@@ -82,17 +116,15 @@ function init() {
     initializeCalendar();
     console.log(calendarDB.december);
 
-
-
-
-
-}
-
-// When the user clicks on <span> (x), close the modal
-function closeModal(){
+    // Get the modal
     var modal = document.getElementById('myModal');
-    modal.style.display = "none";
+    console.log(modal);
+
+
+
+
 }
+
 
 $.getJSON('calendar.json', function(data) {
     calendarDB = data;

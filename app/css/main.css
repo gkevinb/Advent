@@ -52,21 +52,25 @@ Also makes sure the children of date class are the same size.
 So for example, both dec1--date and dec1dec1--content divs are the same size.
 Z-index makes the date go ontop of content varies, the higher the number its on top.
 */
+/*
+    Places background picture for opened days.
+*/
 .calendar {
   height: 100%;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 120px);
-  grid-template-areas: "d1  d2  d3  d4  d5" "d6  d7  d8  d9  d10" "d11 d12 d13 d14 d15" "d16 d17 d18 d19 d20" "d21 d22 d23 d24 . ";
+  grid-template-columns: repeat(7, 125px);
+  grid-template-rows: repeat(4, 125px);
+  grid-template-areas: "d1  d2  d3  d4  d5  d6  d7" "d8  d9  d10 d11 d12 d13 d14" "d15 d16 d17 d18 d19 d20 d21" "d22 d23 d24 . . . .";
   /* Create mini representation of layout with letters to represent calendar */
   margin: 30px; }
 
 .date {
   background-color: #912207;
   text-align: center;
-  font-size: 80px;
-  color: red;
+  font-size: 100px;
+  border: 5px gold ridge;
+  color: white;
   font-family: 'Mountains of Christmas', cursive;
   overflow: hidden;
   position: relative; }
@@ -85,6 +89,9 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/1.png");
+  background-repeat: no-repeat;
+  background-size: 120px 120px;
   grid-area: d1; }
 
 #dec2--date {
@@ -101,6 +108,9 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/2.png");
+  background-repeat: no-repeat;
+  background-size: 120px 120px;
   grid-area: d2; }
 
 #dec3--date {
@@ -461,7 +471,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 5;
+  z-index: 10;
   /* Sit on top */
   padding-top: 100px;
   /* Location of the box */
@@ -475,67 +485,78 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */ }
 
-/* Modal Content (image) */
+/* Modal Content */
 .modal-content {
-  background-color: red;
+  position: relative;
+  background-color: #fefefe;
   margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px; }
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px; }
+  padding: 0;
+  width: 800px;
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s; }
 
 /* Add Animation */
-.modal-content, #caption {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s; }
-
-@-webkit-keyframes zoom {
+@-webkit-keyframes animatetop {
   from {
-    -webkit-transform: scale(0); }
+    top: -300px;
+    opacity: 0; }
   to {
-    -webkit-transform: scale(1); } }
+    top: 0;
+    opacity: 1; } }
 
-@keyframes zoom {
+@keyframes animatetop {
   from {
-    transform: scale(0); }
+    top: -300px;
+    opacity: 0; }
   to {
-    transform: scale(1); } }
+    top: 0;
+    opacity: 1; } }
 
 /* The Close Button */
 .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s; }
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
 
 .close:hover,
 .close:focus {
-  color: #bbb;
+  color: #000;
   text-decoration: none;
   cursor: pointer; }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%; } }
+.modal-header {
+  font-size: 36px;
+  text-align: center;
+  padding: 10px 16px;
+  background-color: #3C8D0D;
+  color: white;
+  font-family: 'Mountains of Christmas', cursive; }
+
+.modal-body {
+  background-image: url("../img/date_.jpg");
+  background-repeat: no-repeat;
+  background-size: 800px 600px;
+  width: 800px;
+  height: 600px;
+  text-align: center;
+  font: cursive;
+  font-size: 20px; }
+  .modal-body img {
+    margin: 90px 190px 0 190px;
+    width: 400px;
+    border: 10px ridge #3C8D0D; }
+
+.modal-footer {
+  background-color: #3C8D0D;
+  color: white; }
 
 /* Dark green color */
 .container {
@@ -552,8 +573,9 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
     /* Span across all columns in first row */
     text-align: center;
     color: white;
-    font-size: 50px;
-    margin: 20px; }
+    font-size: 80px;
+    margin: 20px;
+    font-family: 'Mountains of Christmas', cursive; }
   .container .sidebar {
     background-color: #1b722e;
     opacity: 0.4; }
