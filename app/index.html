@@ -21,13 +21,23 @@
 
         </div>
 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="model-content">
+                
+            </div>
+            <!-- <img class="modal-content" id="img01"> -->
+            <div id="caption"></div>
+        </div>
+
         <div class="calendar">
             <div class="date">
-                <div id="dec1--date">
+                <div id="dec1--date" onclick="dateClicked(1)">
                     <span>1</span>
                 </div>
                 <div id="dec1--content">
-                    <span>Helllos</span>
+                    <span id="dude">Helllos</span>
                 </div>
 
             </div>

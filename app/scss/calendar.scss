@@ -34,8 +34,8 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 .date {
     background-color: $date_color;
     text-align: center;
-    font-size: 40px;
-    color: white;
+    font-size: 80px;
+    color: red;
     font-family: 'Mountains of Christmas', cursive;
     overflow: hidden;
     position: relative;
@@ -43,11 +43,6 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 #dec1--date {
     @include datePositioning(2, visible);
     grid-area: d1;
-    span{
-        text-align: center;
-        border: 1px yellow solid;
-
-    }
 }
 #dec1--content {
     @include datePositioning(1, hidden);
