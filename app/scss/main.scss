@@ -1,33 +1,34 @@
 @import "reset";
 @import "calendar";
 @import "modal";
+@import "snow";
 
-$bg_color: #1b722e; /* Dark green color */
 
-body{
+$bg_color: #1b722e;
+/* Dark green color */
+body {}
 
-}
-.container{
-    height: 700px;
+.container {
+    height: 100%;
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 4fr; /* Grid display columns 1fraction 4 fraction parts */
-    grid-template-rows: 1fr 4fr; /* Grid display rows 1fraction */
+    grid-template-columns: 32fr 48fr;
+    /* Grid display columns 1fraction 4 fraction parts */
+    grid-template-rows: 130px auto;
+    /* Grid display rows 1fraction */
     background-image: url("../img/background.jpg");
-
-    .maintitle{
-        grid-column: 1 / -1; /* Span across all columns in first row */
+    background-repeat: no-repeat;
+    // background-size: 1600px 1400px;
+    .maintitle {
+        grid-column: 1 / -1;
+        /* Span across all columns in first row */
         text-align: center;
         color: white;
         font-size: 80px;
         margin: 20px;
         font-family: 'Mountains of Christmas', cursive;
-
-    }
-    .sidebar{
-        background-color: $bg_color;
-        opacity: 0.4;
     }
 
-
+    .sidebar {
+        //background-color: $bg_color;
+    }
 }

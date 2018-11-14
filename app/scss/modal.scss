@@ -57,7 +57,7 @@ $christman_green: #3C8D0D;
 }
 
 .modal-header {
-    font-size: 36px;
+    font-size: 40px;
     text-align: center;
     padding: 10px 16px;
     background-color: $christman_green;
@@ -69,14 +69,15 @@ $christman_green: #3C8D0D;
     background-image: url("../img/date_.jpg");
     background-repeat: no-repeat;
     background-size: 800px 600px;
-    width: 800px;
-    height: 600px;
+    width: 560px;
+    height: 420px;
+    padding: 90px 120px 90px 120px;
     text-align: center;
     font: cursive;
     font-size: 20px;
 
     img{
-        margin: 90px 190px 0 190px;
+        margin: 0 70px 0 70px;
         width: 400px;
         border: 10px ridge $christman_green;
     }

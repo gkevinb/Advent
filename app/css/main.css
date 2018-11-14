@@ -2,6 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+html, body {
+  height: 100%; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,16 +57,17 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 */
 /*
     Places background picture for opened days.
+    And make it lighter when hovered over.
 */
 .calendar {
   height: 100%;
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(7, 125px);
-  grid-template-rows: repeat(4, 125px);
-  grid-template-areas: "d1  d2  d3  d4  d5  d6  d7" "d8  d9  d10 d11 d12 d13 d14" "d15 d16 d17 d18 d19 d20 d21" "d22 d23 d24 . . . .";
-  /* Create mini representation of layout with letters to represent calendar */
-  margin: 30px; }
+  grid-column-gap: 30px;
+  grid-row-gap: 15px;
+  grid-template-columns: repeat(5, 120px);
+  grid-template-rows: repeat(5, 120px);
+  grid-template-areas: "d1  d2  d3  d4  d5" "d6  d7  d8  d9  d10" "d11 d12 d13 d14 d15" "d16 d17 d18 d19 d20" "d21 d22 d23 d24 . ";
+  /* Create mini representation of layout with letters to represent calendar */ }
 
 .date {
   background-color: #912207;
@@ -74,6 +78,10 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   font-family: 'Mountains of Christmas', cursive;
   overflow: hidden;
   position: relative; }
+
+.date:hover {
+  background-color: white;
+  color: #912207; }
 
 #dec1--date {
   height: 100%;
@@ -91,8 +99,10 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   visibility: hidden;
   background-image: url("../img/1.png");
   background-repeat: no-repeat;
-  background-size: 120px 120px;
+  background-size: 112px 112px;
   grid-area: d1; }
+  #dec1--content:hover {
+    opacity: 0.3; }
 
 #dec2--date {
   height: 100%;
@@ -110,8 +120,10 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   visibility: hidden;
   background-image: url("../img/2.png");
   background-repeat: no-repeat;
-  background-size: 120px 120px;
+  background-size: 112px 112px;
   grid-area: d2; }
+  #dec2--content:hover {
+    opacity: 0.3; }
 
 #dec3--date {
   height: 100%;
@@ -127,7 +139,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/3.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d3; }
+  #dec3--content:hover {
+    opacity: 0.3; }
 
 #dec4--date {
   height: 100%;
@@ -143,7 +160,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/4.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d4; }
+  #dec4--content:hover {
+    opacity: 0.3; }
 
 #dec5--date {
   height: 100%;
@@ -159,7 +181,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/5.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d5; }
+  #dec5--content:hover {
+    opacity: 0.3; }
 
 #dec6--date {
   height: 100%;
@@ -533,7 +560,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   cursor: pointer; }
 
 .modal-header {
-  font-size: 36px;
+  font-size: 40px;
   text-align: center;
   padding: 10px 16px;
   background-color: #3C8D0D;
@@ -544,13 +571,14 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   background-image: url("../img/date_.jpg");
   background-repeat: no-repeat;
   background-size: 800px 600px;
-  width: 800px;
-  height: 600px;
+  width: 560px;
+  height: 420px;
+  padding: 90px 120px 90px 120px;
   text-align: center;
   font: cursive;
   font-size: 20px; }
   .modal-body img {
-    margin: 90px 190px 0 190px;
+    margin: 0 70px 0 70px;
     width: 400px;
     border: 10px ridge #3C8D0D; }
 
@@ -558,16 +586,35 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   background-color: #3C8D0D;
   color: white; }
 
+#snowflakeContainer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%; }
+
+.snowflake {
+  padding-left: 15px;
+  font-family: Cambria, Georgia, serif;
+  font-size: 14px;
+  line-height: 24px;
+  position: fixed;
+  color: #FFFFFF;
+  user-select: none;
+  z-index: 1000; }
+
+.snowflake:hover {
+  cursor: default; }
+
 /* Dark green color */
 .container {
-  height: 700px;
+  height: 100%;
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 32fr 48fr;
   /* Grid display columns 1fraction 4 fraction parts */
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 130px auto;
   /* Grid display rows 1fraction */
-  background-image: url("../img/background.jpg"); }
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat; }
   .container .maintitle {
     grid-column: 1 / -1;
     /* Span across all columns in first row */
@@ -576,6 +623,3 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
     font-size: 80px;
     margin: 20px;
     font-family: 'Mountains of Christmas', cursive; }
-  .container .sidebar {
-    background-color: #1b722e;
-    opacity: 0.4; }
