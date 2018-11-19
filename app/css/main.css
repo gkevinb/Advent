@@ -202,7 +202,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/6.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d6; }
+  #dec6--content:hover {
+    opacity: 0.3; }
 
 #dec7--date {
   height: 100%;
@@ -218,7 +223,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/7.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d7; }
+  #dec7--content:hover {
+    opacity: 0.3; }
 
 #dec8--date {
   height: 100%;
@@ -234,7 +244,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/8.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d8; }
+  #dec8--content:hover {
+    opacity: 0.3; }
 
 #dec9--date {
   height: 100%;
@@ -250,7 +265,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/9.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d9; }
+  #dec9--content:hover {
+    opacity: 0.3; }
 
 #dec10--date {
   height: 100%;
@@ -266,7 +286,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/10.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d10; }
+  #dec10--content:hover {
+    opacity: 0.3; }
 
 #dec11--date {
   height: 100%;
@@ -282,7 +307,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/11.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d11; }
+  #dec11--content:hover {
+    opacity: 0.3; }
 
 #dec12--date {
   height: 100%;
@@ -298,7 +328,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/12.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d12; }
+  #dec12--content:hover {
+    opacity: 0.3; }
 
 #dec13--date {
   height: 100%;
@@ -314,7 +349,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/13.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d13; }
+  #dec13--content:hover {
+    opacity: 0.3; }
 
 #dec14--date {
   height: 100%;
@@ -330,7 +370,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/14.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d14; }
+  #dec14--content:hover {
+    opacity: 0.3; }
 
 #dec15--date {
   height: 100%;
@@ -346,7 +391,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/15.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d15; }
+  #dec15--content:hover {
+    opacity: 0.3; }
 
 #dec16--date {
   height: 100%;
@@ -362,7 +412,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/16.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d16; }
+  #dec16--content:hover {
+    opacity: 0.3; }
 
 #dec17--date {
   height: 100%;
@@ -378,7 +433,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/17.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d17; }
+  #dec17--content:hover {
+    opacity: 0.3; }
 
 #dec18--date {
   height: 100%;
@@ -394,7 +454,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/18.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d18; }
+  #dec18--content:hover {
+    opacity: 0.3; }
 
 #dec19--date {
   height: 100%;
@@ -410,7 +475,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/19.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d19; }
+  #dec19--content:hover {
+    opacity: 0.3; }
 
 #dec20--date {
   height: 100%;
@@ -426,7 +496,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/20.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d20; }
+  #dec20--content:hover {
+    opacity: 0.3; }
 
 #dec21--date {
   height: 100%;
@@ -442,7 +517,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/21.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d21; }
+  #dec21--content:hover {
+    opacity: 0.3; }
 
 #dec22--date {
   height: 100%;
@@ -458,7 +538,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/22.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d22; }
+  #dec22--content:hover {
+    opacity: 0.3; }
 
 #dec23--date {
   height: 100%;
@@ -474,7 +559,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/23.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d23; }
+  #dec23--content:hover {
+    opacity: 0.3; }
 
 #dec24--date {
   height: 100%;
@@ -490,7 +580,12 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   position: absolute;
   z-index: 1;
   visibility: hidden;
+  background-image: url("../img/24.png");
+  background-repeat: no-repeat;
+  background-size: 112px 112px;
   grid-area: d24; }
+  #dec24--content:hover {
+    opacity: 0.3; }
 
 /* The Modal (background) */
 .modal {
@@ -575,8 +670,8 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
   height: 420px;
   padding: 90px 120px 90px 120px;
   text-align: center;
-  font: cursive;
-  font-size: 20px; }
+  font-family: "Princess Sofia", cursive;
+  font-size: 32px; }
   .modal-body img {
     margin: 0 70px 0 70px;
     width: 400px;

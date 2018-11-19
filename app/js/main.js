@@ -34,7 +34,7 @@ function constructDecContentString(date) {
 18 -> img/dec18.jpg
 */
 function constructImgSrc(date) {
-    return "img/dec" + String(date) + ".jpeg";
+    return "img/" + String(date);
 }
 
 /*
@@ -67,7 +67,8 @@ function dateClicked(day) {
     for (var i = 0; i < calendarDB.december.length; i++) {
         if (calendarDB.december[i].day == day) {
             calendarDB.december[i].opened = true;
-            var text = calendarDB.december[i].text;
+            //var text = calendarDB.december[i].text;
+            var date = calendarDB.december[i];
         }
     }
     localStorage.setItem('advent_calendar', JSON.stringify(calendarDB));
@@ -77,10 +78,13 @@ function dateClicked(day) {
     modal.style.display = "block";
 
     document.getElementById('modal-title').innerHTML = "December " + String(day);
-    document.getElementById('modal-img').src = constructImgSrc(day);
-    document.getElementById('modal-text').innerHTML = text;
+    if(date.image != null){
+        document.getElementById('modal-img').src = constructImgSrc(date.image);
+    }
+    document.getElementById('modal-text').innerHTML = date.text;
 
-
+    // Reset date
+    date = null;
 
     // // Get the modal
     // var modal = document.getElementById('myModal');

@@ -3,7 +3,8 @@
         {
             "day" : 1,
             "opened" : false,
-            "text" : "The memories of our time at the deer park."
+            "image" : "dec1.jpeg",
+            "text" : "The memories of our time at the deer park. Such a beautiful day."
         },
         {
             "day" : 2,
@@ -35,7 +36,9 @@
         },
         {
             "day" : 9,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec9.jpg",
+            "text" : "6 months ago!! First selfie together!!"
         },
         {
             "day" : 10,
@@ -95,7 +98,8 @@
         },
         {
             "day" : 24,
-            "opened" : false
+            "opened" : false,
+            "text" : "Our half year anniversay!! Happy 6 months and Merry Christmas!!"
         }
     ]
 }

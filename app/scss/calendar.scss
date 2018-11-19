@@ -126,6 +126,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec6--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/6.png");
     grid-area: d6;
 }
 #dec7--date {
@@ -134,6 +135,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec7--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/7.png");
     grid-area: d7;
 }
 #dec8--date {
@@ -142,6 +144,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec8--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/8.png");
     grid-area: d8;
 }
 #dec9--date {
@@ -150,6 +153,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec9--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/9.png");
     grid-area: d9;
 }
 #dec10--date {
@@ -158,6 +162,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec10--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/10.png");
     grid-area: d10;
 }
 #dec11--date {
@@ -166,6 +171,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec11--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/11.png");
     grid-area: d11;
 }
 #dec12--date {
@@ -174,6 +180,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec12--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/12.png");
     grid-area: d12;
 }
 #dec13--date {
@@ -182,6 +189,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec13--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/13.png");
     grid-area: d13;
 }
 #dec14--date {
@@ -190,6 +198,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec14--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/14.png");
     grid-area: d14;
 }
 #dec15--date {
@@ -198,6 +207,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec15--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/15.png");
     grid-area: d15;
 }
 #dec16--date {
@@ -206,6 +216,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec16--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/16.png");
     grid-area: d16;
 }
 #dec17--date {
@@ -214,6 +225,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec17--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/17.png");
     grid-area: d17;
 }
 #dec18--date {
@@ -222,6 +234,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec18--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/18.png");
     grid-area: d18;
 }
 #dec19--date {
@@ -230,6 +243,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec19--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/19.png");
     grid-area: d19;
 }
 #dec20--date {
@@ -238,6 +252,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec20--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/20.png");
     grid-area: d20;
 }
 #dec21--date {
@@ -246,6 +261,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec21--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/21.png");
     grid-area: d21;
 }
 #dec22--date {
@@ -254,6 +270,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec22--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/22.png");
     grid-area: d22;
 }
 #dec23--date {
@@ -262,6 +279,7 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec23--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/23.png");
     grid-area: d23;
 }
 #dec24--date {
@@ -270,5 +288,6 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
 }
 #dec24--content {
     @include datePositioning(1, hidden);
+    @include dateBackgroundImage("../img/24.png");
     grid-area: d24;
 }
