@@ -718,3 +718,8 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
     font-size: 80px;
     margin: 20px;
     font-family: 'Mountains of Christmas', cursive; }
+  .container .sidebar {
+    padding: 30px;
+    color: white;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 40px; }

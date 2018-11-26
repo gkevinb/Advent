@@ -3,36 +3,50 @@
         {
             "day" : 1,
             "opened" : false,
-            "image" : "dec1.jpeg",
-            "text" : "The memories of our time at the deer park. Such a beautiful day."
+            "image" : "dec1.png",
+            "text" : "Because all my moments are sweet with you!!"
         },
         {
             "day" : 2,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec2.png",
+            "text" : "Guess the name of this river!!"
         },
         {
             "day" : 3,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec3.png",
+            "text" : "6 hónapja láttam meg a legszebb lányt a világon. Imádlak!!"
         },
         {
             "day" : 4,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec4.png",
+            "text" : "A legjobb csapat vagyunk bébi és csak így tovább. Felépitjuk a birodalmunkat!!"
         },
         {
             "day" : 5,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec5_.png",
+            "text" : "Karácsonyiiii Nyussszzziiikkkkk!!"
         },
         {
             "day" : 6,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec6.png",
+            "text" : "I will never take you for granted. Mindig fogom éreztetni veled mennyire fontos vagy és hogy mennyire nagy érték vagy számomra."
         },
         {
             "day" : 7,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec7.png",
+            "text" : "Ma én vagyok a meglepetés este tali!!"
         },
         {
             "day" : 8,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec8.png",
+            "text" : "Amikor ezt írtuk, tisztán emlékszem hogy annyira azt éreztem bár csak egy helyen lettünk volna."
         },
         {
             "day" : 9,
@@ -42,19 +56,27 @@
         },
         {
             "day" : 10,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec10.png",
+            "text" : "A felejhetetlen Koppenhágai kaland."
         },
         {
             "day" : 11,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec11.png",
+            "text" : "This one is a suprise for me, call me and say either!!"
         },
         {
             "day" : 12,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec12__.png",
+            "text" : "Ez volt az a nap ott Odenseben amikor először éreztem és rájöttem hogy benned meg találtam az otthonom."
         },
         {
             "day" : 13,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec13.png",
+            "text" : "Ezek voltak az első számok ami rád emlékeztet.<br><a href=https://www.youtube.com/watch?v=hI4YSRil-Jc><3</a><br><a href=https://www.youtube.com/watch?v=P_rpDHvAt88><3<3</a><br><a href=https://www.youtube.com/watch?v=Lj6Y6JCu-l4><3<3<3</a>"
         },
         {
             "day" : 14,
@@ -62,35 +84,51 @@
         },
         {
             "day" : 15,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec15.png",
+            "text" : "Yes day for you!!"
         },
         {
             "day" : 16,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec16.png",
+            "text" : "Guess the name of this river!"
         },
         {
             "day" : 17,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec17.png",
+            "text" : "Veled a világ végére is el mennék."
         },
         {
             "day" : 18,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec18_.png",
+            "text" : "Az nap két habléány volt a köveken, abbol az egyik az én tengeriborsóm."
         },
         {
             "day" : 19,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec19.png",
+            "text" : "Words about you."
         },
         {
             "day" : 20,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec20.png",
+            "text" : "Ez a kép Június 2. készült, az volt az utolsó nap amikor nem is tudtam hogy létezel, most meg már nem tudok elképzelni egy olyan napot amibe nem vagy benne."
         },
         {
             "day" : 21,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec21.png",
+            "text" : "\"Megvan mind a hét gombod Sziszi!?\"<br>Szevin Buttons!!!"
         },
         {
             "day" : 22,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec22.png",
+            "text" : "Az első kirándulásunk együtt!!!"
         },
         {
             "day" : 23,
@@ -99,7 +137,8 @@
         {
             "day" : 24,
             "opened" : false,
-            "text" : "Our half year anniversay!! Happy 6 months and Merry Christmas!!"
+            "image" : "dec24.jpeg",
+            "text" : "Boldog Karácsonyt és boldog féléves fordulót!! Alig várom hogy újra a karjaimköszt legyél."
         }
     ]
 }
