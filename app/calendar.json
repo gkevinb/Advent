@@ -76,11 +76,13 @@
             "day" : 13,
             "opened" : false,
             "image" : "dec13.png",
-            "text" : "Ezek voltak az első számok ami rád emlékeztet.<br><a href=https://www.youtube.com/watch?v=hI4YSRil-Jc><3</a><br><a href=https://www.youtube.com/watch?v=P_rpDHvAt88><3<3</a><br><a href=https://www.youtube.com/watch?v=Lj6Y6JCu-l4><3<3<3</a>"
+            "text" : "Ezek voltak az első számok ami rád emlékeztet.<br><a href=\"https://www.youtube.com/watch?v=hI4YSRil-Jc\" target=\"_blank\"><3</a><br><a href=\"https://www.youtube.com/watch?v=P_rpDHvAt88\" target=\"_blank\"><3<3</a><br><a href=\"https://www.youtube.com/watch?v=Lj6Y6JCu-l4\" target=\"_blank\"><3<3<3</a>"
         },
         {
             "day" : 14,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec14.png",
+            "text" : "Köszönöm hogy mindig mosólyt csalsz az arcomra."
         },
         {
             "day" : 15,
@@ -92,7 +94,7 @@
             "day" : 16,
             "opened" : false,
             "image" : "dec16.png",
-            "text" : "Guess the name of this river!"
+            "text" : "You say body parts and I kiss you there!!"
         },
         {
             "day" : 17,
@@ -132,12 +134,14 @@
         },
         {
             "day" : 23,
-            "opened" : false
+            "opened" : false,
+            "image" : "dec23.png",
+            "text" : "Érted megéri mindent."
         },
         {
             "day" : 24,
             "opened" : false,
-            "image" : "dec24.jpeg",
+            "image" : "dec24.png",
             "text" : "Boldog Karácsonyt és boldog féléves fordulót!! Alig várom hogy újra a karjaimköszt legyél."
         }
     ]

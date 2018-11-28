@@ -1,22 +1,11 @@
 var calendarDB;
 var modal;
 
-
-
 // When the user clicks on <span> (x), close the modal
 function closeModal() {
     var modal = document.getElementById('myModal');
     modal.style.display = "none";
 }
-
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     }
-// }
-
 
 /*
 18 -> dec18--date
@@ -74,7 +63,7 @@ function dateClicked(day) {
     localStorage.setItem('advent_calendar', JSON.stringify(calendarDB));
 
     var modal = document.getElementById('myModal');
-    console.log(modal);
+    //console.log(modal);
     modal.style.display = "block";
 
     document.getElementById('modal-title').innerHTML = "December " + String(day);
@@ -85,18 +74,6 @@ function dateClicked(day) {
 
     // Reset date
     date = null;
-
-    // // Get the modal
-    // var modal = document.getElementById('myModal');
-    //
-    // // Get the image and insert it inside the modal - use its "alt" text as a caption
-    // //var img = document.getElementById('myImg');
-    // //var modalImg = document.getElementById("img01");
-    // var captionText = document.getElementById("dude");
-    // var modalCaption = document.getElementById("caption");
-    // modal.style.display = "block";
-    // //modalImg.src = img.src;
-    // modalCaption.innerHTML = captionText.innerHTML;
 
 }
 
@@ -118,14 +95,12 @@ function init() {
         calendarDB = JSON.parse(localStorage.getItem('advent_calendar'));
     }
     initializeCalendar();
-    console.log(calendarDB.december);
+    //console.log(calendarDB.december);
+    //console.log(localStorage);
 
     // Get the modal
     var modal = document.getElementById('myModal');
-    console.log(modal);
-
-
-
+    //console.log(modal);
 
 }
 
