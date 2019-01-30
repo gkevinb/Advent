@@ -1,28 +1,28 @@
-$date_color: #912207; /* Maroon color */
-
+$date_color: #912207;
+/* Maroon color */
 /*
 Positions the date on calendar and content of calendar behind each together.
 Also makes sure the children of date class are the same size.
 So for example, both dec1--date and dec1dec1--content divs are the same size.
 Z-index makes the date go ontop of content varies, the higher the number its on top.
 */
-@mixin datePositioning($_zIndex, $_visibility){
+@mixin datePositioning($_zIndex, $_visibility) {
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: $_zIndex;
     visibility: $_visibility;
 }
-
 /*
     Places background picture for opened days.
     And make it lighter when hovered over.
 */
-@mixin dateBackgroundImage($source){
+@mixin dateBackgroundImage($source) {
     background-image: url($source);
     background-repeat: no-repeat;
     background-size: 112px 112px;
-    &:hover{
+
+    &:hover {
         opacity: 0.3;
     }
 }
@@ -35,25 +35,22 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
     grid-row-gap: 15px;
     grid-template-columns: repeat(5, 120px);
     grid-template-rows: repeat(5, 120px);
-    grid-template-areas:
-        "d1  d2  d3  d4  d5"
-        "d6  d7  d8  d9  d10"
-        "d11 d12 d13 d14 d15"
-        "d16 d17 d18 d19 d20"
-        "d21 d22 d23 d24 . ";
-    /* Create mini representation of layout with letters to represent calendar */
+    grid-template-areas: "d1 d2 d3 d4 d5"
+                         "d6 d7 d8 d9 d10"
+                         "d11 d12 d13 d14 d15"
+                         "d16 d17 d18 d19 d20"
+                         "d21 d22 d23 d24 . ";
 
+    /* Create mini representation of layout with letters to represent calendar */
     // "d1  d2  d3  d4  d5  d6  d7"
     // "d8  d9  d10 d11 d12 d13 d14"
     // "d15 d16 d17 d18 d19 d20 d21"
     // "d22 d23 d24 . . . .";
-
     // "d1  d2  d3  d4  d5"
     // "d6  d7  d8  d9  d10"
     // "d11 d12 d13 d14 d15"
     // "d16 d17 d18 d19 d20"
     // "d21 d22 d23 d24 . ";
-
     // "d1  d2  d3  d4  d5  d6"
     // "d7  d8  d9  d10 d11 d12"
     // "d13 d14 d15 d16 d17 d18"
@@ -70,224 +67,45 @@ Z-index makes the date go ontop of content varies, the higher the number its on 
     overflow: hidden;
     position: relative;
 }
-.date:hover{
+
+.date:hover {
     background-color: white;
     color: $date_color;
 }
-#dec1--date {
-    @include datePositioning(2, visible);
-    grid-area: d1;
-}
-#dec1--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/1.png");
-    grid-area: d1;
-}
 
-#dec2--date {
-    @include datePositioning(2, visible);
-    grid-area: d2;
+@for $i from 1 through 24 {
+    #dec#{$i}--date {
+        @include datePositioning(2, visible);
+        grid-area: d#{$i};
+    }
+
+    #dec#{$i}--content {
+        @include datePositioning(1, hidden);
+        @include dateBackgroundImage("../img/#{$i}.png");
+        grid-area: d#{$i};
+    }
 }
-#dec2--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/2.png");
-    grid-area: d2;
-}
-#dec3--date {
-    @include datePositioning(2, visible);
-    grid-area: d3;
-}
-#dec3--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/3.png");
-    grid-area: d3;
-}
-#dec4--date {
-    @include datePositioning(2, visible);
-    grid-area: d4;
-}
-#dec4--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/4.png");
-    grid-area: d4;
-}
-#dec5--date {
-    @include datePositioning(2, visible);
-    grid-area: d5;
-}
-#dec5--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/5.png");
-    grid-area: d5;
-}
-#dec6--date {
-    @include datePositioning(2, visible);
-    grid-area: d6;
-}
-#dec6--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/6.png");
-    grid-area: d6;
-}
-#dec7--date {
-    @include datePositioning(2, visible);
-    grid-area: d7;
-}
-#dec7--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/7.png");
-    grid-area: d7;
-}
-#dec8--date {
-    @include datePositioning(2, visible);
-    grid-area: d8;
-}
-#dec8--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/8.png");
-    grid-area: d8;
-}
-#dec9--date {
-    @include datePositioning(2, visible);
-    grid-area: d9;
-}
-#dec9--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/9.png");
-    grid-area: d9;
-}
-#dec10--date {
-    @include datePositioning(2, visible);
-    grid-area: d10;
-}
-#dec10--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/10.png");
-    grid-area: d10;
-}
-#dec11--date {
-    @include datePositioning(2, visible);
-    grid-area: d11;
-}
-#dec11--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/11.png");
-    grid-area: d11;
-}
-#dec12--date {
-    @include datePositioning(2, visible);
-    grid-area: d12;
-}
-#dec12--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/12.png");
-    grid-area: d12;
-}
-#dec13--date {
-    @include datePositioning(2, visible);
-    grid-area: d13;
-}
-#dec13--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/13.png");
-    grid-area: d13;
-}
-#dec14--date {
-    @include datePositioning(2, visible);
-    grid-area: d14;
-}
-#dec14--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/14.png");
-    grid-area: d14;
-}
-#dec15--date {
-    @include datePositioning(2, visible);
-    grid-area: d15;
-}
-#dec15--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/15.png");
-    grid-area: d15;
-}
-#dec16--date {
-    @include datePositioning(2, visible);
-    grid-area: d16;
-}
-#dec16--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/16.png");
-    grid-area: d16;
-}
-#dec17--date {
-    @include datePositioning(2, visible);
-    grid-area: d17;
-}
-#dec17--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/17.png");
-    grid-area: d17;
-}
-#dec18--date {
-    @include datePositioning(2, visible);
-    grid-area: d18;
-}
-#dec18--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/18.png");
-    grid-area: d18;
-}
-#dec19--date {
-    @include datePositioning(2, visible);
-    grid-area: d19;
-}
-#dec19--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/19.png");
-    grid-area: d19;
-}
-#dec20--date {
-    @include datePositioning(2, visible);
-    grid-area: d20;
-}
-#dec20--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/20.png");
-    grid-area: d20;
-}
-#dec21--date {
-    @include datePositioning(2, visible);
-    grid-area: d21;
-}
-#dec21--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/21.png");
-    grid-area: d21;
-}
-#dec22--date {
-    @include datePositioning(2, visible);
-    grid-area: d22;
-}
-#dec22--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/22.png");
-    grid-area: d22;
-}
-#dec23--date {
-    @include datePositioning(2, visible);
-    grid-area: d23;
-}
-#dec23--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/23.png");
-    grid-area: d23;
-}
-#dec24--date {
-    @include datePositioning(2, visible);
-    grid-area: d24;
-}
-#dec24--content {
-    @include datePositioning(1, hidden);
-    @include dateBackgroundImage("../img/24.png");
-    grid-area: d24;
-}
+// @for $i from 1 through 100 {
+//     .#{$class}#{$i}
+// }
+// for each $col_#{i}
+//
+// @for $i from 1 through 4
+//   .#{$class-slug}-#{$i}
+//     width: 60px + $i
+// $dec: dec;
+// $date: date;
+//
+// @for $i from 1 through 24 {
+//     #{$dec}-#{$i}
+//     //##{$dec}#{$i}--#{$content}
+// }
+// {
+//     @include datePositioning(#{$i}, visible);
+//     grid-area: d#{$i};
+// }
+// ##{$dec}#{$i}--#{$content} {
+//     @include datePositioning(#{$i}, hidden);
+//     @include dateBackgroundImage("../img/#{$i}.png");
+//     grid-area: d#{$i};
+// }
